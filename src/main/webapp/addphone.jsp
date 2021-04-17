@@ -18,20 +18,20 @@
         <form class="col-12" action="phone" method="post">
             <div class="form-group">
                 <label>Name :</label>
-                <input class="form-control" type="text" id="name" name="name">
+                <input class="form-control" type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
                 <label>Brand :</label>
-                <input class="form-control" type="text" id="brand_id" value="1" name="brand">
+                <input class="form-control" type="text" id="brand_id" value="1" name="brand" required>
             </div>
             <div class="form-group">
                 <label>Price :</label>
-                <input class="form-control" type="text" id="price"  name="classId">
+                <input class="form-control" type="text" id="price"  name="classId" required>
             </div>
             <div class="form-group">
                 <label>Description :</label>
-                <input class="form-control" type="text" id="description" name="phone">
+                <input class="form-control" type="text" id="description" name="phone" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Create</button>

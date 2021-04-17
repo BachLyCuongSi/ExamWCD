@@ -21,6 +21,14 @@ public class PhoneServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PhoneEntity p = new PhoneEntity();
+        p.setName(request.getParameter("name"));
+        p.setCategory_id(Integer.parseInt(request.getParameter("brand_id")) );
+        p.setPrice(Double.parseDouble(request.getParameter("price")) );
+        p.setDescription(request.getParameter("description"));
 
+        PhoneDao dao = new PhoneDao();
+        dao.insertPhone(p);
+        doGet(request,response);
     }
 }

@@ -28,12 +28,13 @@
         <tr>
             <td>${phone.id}</td>
             <td id="name_${phone.id}">${phone.name}</td>
-            <td id="title_${phone.id}">${phone.title}</td>
-            <td id="image_${phone.id}">${phone.url_image}</td>
+            <td id="title_${phone.id}">Brand</td>
+            <td id="image_${phone.id}">${phone.price}</td>
+            <td >${phone.description}</td>
             <td>
-                <a data-toggle="modal" data-target="#updateCateModal" onclick="viewCate(${cate.id})" />  Edit  </a>
-                |
-                <a onclick="deleteCate(${cate.id})" class="delete" > Delete  </a>
+<%--                <a data-toggle="modal" data-target="#updateCateModal" onclick="viewCate(${cate.id})" />  Edit  </a>--%>
+<%--                |--%>
+<%--                <a onclick="deleteCate(${cate.id})" class="delete" > Delete  </a>--%>
             </td>
         </tr>
     </c:forEach>
